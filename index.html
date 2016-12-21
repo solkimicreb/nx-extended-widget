@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="index.js"></script>
+    <script>finalWidget().register('github-widget')</script>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font: 18px 'Raleway', sans-serif;
+      }
+      .container {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      github-widget {
+        max-width: 300px;
+        margin: 10px;
+      }
+      p {
+        text-align: center;
+        margin: 20px 10px;
+      }
+      a {
+        cursor: pointer;
+        color: #009688;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <github-widget query="nx-framework" sort="stars" order="asc">
+        <span slot="footer">Extended widget</span>
+      </github-widget>
+      <p>
+        This is an example widget, demonstrating the data-binding, event handling, animation shadow DOM and routing
+        capabilities of the <a href="http://www.nx-framework.com">NX framework</a>.
+      </p>
+      <p>
+         The widget's source code can be found in <a href="https://github.com/solkimicreb/nx-extended-widget">this repo</a>.
+         A tutorial on how to create a widget like this can be found <a href="http://www.nx-framework.com/blog/public/extended-widget/">here</a>.
+      </p>
+    </div>
+  </body>
+</html>
